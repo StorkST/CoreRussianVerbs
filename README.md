@@ -41,7 +41,7 @@ As a TODO there is the objective to have an online version of the table.
 ## Contributing and editing the main CSV file
 
 When contributing to the project, you should take care of the tool you are using.
-For example Excel can read the file in UTF-8 but exports with a BOM UTF-8 encoding that adds unwanted bytes to the file. Therefor you should avoid using Excel.
+For example Excel can read the file in UTF-8 but exports with a BOM UTF-8 encoding that adds unwanted bytes to the file. Therefore you should avoid using Excel.
 
 The best ways to edit the file for a collaborative usage are:
 * Using OpenOffice Calc with this configuration set when opening the file.</br>
