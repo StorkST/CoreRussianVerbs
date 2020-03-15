@@ -26,7 +26,7 @@ The main file is called `RussianVerbs.csv` and contains for each verb:
   * Belongings to conjugation groups (1st or 2nd conjugation group and suffixes as defined by [ressources from the Cornell University](https://russian.cornell.edu/verbs/irgLinks.htm))
   * Any other metadata that could be suggested and be relevant may by added
 
-> **March 2020: Be warned that material is given as is and may contains mistakes or not be complete. For example many adverbial forms are not yet specified and Conjugation is missing for a few verbs.**
+> **March 2020: Be warned that material is given as is and may contain mistakes or not be complete. For example many adverbial forms are not yet specified and Conjugation is missing for a few verbs.**
 
 ## Quantity
 
