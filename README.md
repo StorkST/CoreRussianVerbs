@@ -47,6 +47,8 @@ The best ways to edit the file for a collaborative usage are:
 * Using OpenOffice Calc with this configuration set when opening the file.<br>
 <img src="screenshots/LibreOffice-calc-configuration-at-opening.png" width="450">
 
+It is imporant to not check Tab as it will add unwanted tabs throughout the file.
+
 
 * Using [Atom](https://atom.io/) with the [atom-tablr extension](https://github.com/abe33/atom-tablr). With this configuration set when opening the file. <br>
 <img src="screenshots/Atom-tablr-configuration-at-opening.png" width="700">
