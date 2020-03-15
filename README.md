@@ -40,20 +40,23 @@ The best way to read the file for now is to download it then to open it with you
 As a TODO there is the objective to have an online version of the table.
 
 
-## Edit the main CSV file (contribute)
+## Contributing and editing the main CSV file
 
 When contributing to the project, you should take care of the tool you are using.
-For example Excel can read the file in UTF-8 but exports with a BOM UTF-8 encoding that adds unwanted bytes to the file. OpenOffice Calc also adds unwanted characters.
+For example Excel can read the file in UTF-8 but exports with a BOM UTF-8 encoding that adds unwanted bytes to the file. Therefor you should avoid using Excel.
 
-The best way to edit the file for a collaborative usage would be:
-* Using a simple text editor (but this solution is not user-friendly)
+The best ways to edit the file for a collaborative usage are:
+* Using OpenOffice Calc with this configuration set when opening the file ![OpenOffice Calc configuration]()
 * Using [Atom](https://atom.io/) with the [atom-tablr extension](https://github.com/abe33/atom-tablr) that doesn't add any strange characters to the file
-* Feel free to try other text editor that would be simpler to use
+With this configuration set when opening the file ![]()
+
+* Using a simple text editor (but this solution is not user-friendly)
+* Feel free to try other text editor that would be simple to use but verify with `git diff` that modifications to the file are comparable with its previous version
 
 ## TODO
 * Most needed would be making a review of the verbs, fixing false information and adding the missing one (Conjugation and aspect pairs mainly)
-* Adding Metadata "Conjugation groups" and "Suffix"
-* Have a Github webpage displaying the verbs table (using for example [MUI-Datatables](https://github.com/gregnb/mui-datatables))
+* Completing Metadata "Conjugation groups" and "Suffix"
+* Having a Github webpage displaying the verbs table (using for example [MUI-Datatables](https://github.com/gregnb/mui-datatables))
 * Creating special cheat-sheets (for learning conjugation groups, suffix, verbal adjectives, imperfective of perfective forms...)
 * Feel free to make Pull Request to add new columns and information about verbs (Translation, Metadata...)
 
