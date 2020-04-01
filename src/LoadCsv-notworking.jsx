@@ -20,8 +20,7 @@ class LoadCsv extends React.Component {
             let decoder = new TextDecoder('utf-8');
 
             return reader.read().then(function (result) {
-                //return decoder.decode(result.value);
-                return "ta,to,ti";
+                return decoder.decode(result.value);
             });
         });
     }
