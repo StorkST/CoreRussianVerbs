@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 
 // HtmlWebpackPlugin is used to inject our created bundles into this html file so // we need to create it.
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
@@ -50,6 +51,9 @@ module.exports = {
         }),
         HtmlWebpackPluginConfig,
         new webpack.NoEmitOnErrorsPlugin(),
+        new CopyPlugin([
+            { from: './src/export-nostars.csv', to: 'data/' }
+          ])
     ],
     mode: 'development',
     optimization: {
