@@ -15,7 +15,7 @@ class LoadCsv extends React.Component {
     }
 
     fetchCsv() {
-        return fetch('export-nostars.csv').then(function (response) {
+        return fetch('src/export-nostars.csv').then(function (response) {
             let reader = response.body.getReader();
             let decoder = new TextDecoder('utf-8');
 
