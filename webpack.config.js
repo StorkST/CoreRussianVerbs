@@ -17,8 +17,7 @@ module.exports = {
         contentBase: './dist',
     },
     entry: {
-        app: ['./src/App.jsx'],
-        vendor: ['react', 'react-dom']
+        app: ['./src/App.jsx']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -53,4 +52,9 @@ module.exports = {
         new webpack.NoEmitOnErrorsPlugin(),
     ],
     mode: 'development',
+    optimization: {
+        splitChunks: {
+          chunks: 'all'
+        }
+    }
 }
