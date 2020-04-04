@@ -16,6 +16,9 @@ module.exports = {
     devServer: {
         port: 3000,
         contentBase: './dist',
+        overlay: {
+            errors: true
+          }
     },
     entry: {
         app: ['./src/App.jsx']
