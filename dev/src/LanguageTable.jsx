@@ -5,9 +5,9 @@ import { fetchCsv } from "./csvUtils";
 const title = "Russian Verbs Classification";
 
 const options = {
-  filterType: "dropdown",
   //responsive: "scroll",
-  rowsPerPageOptions: [50, 100, 250, 500]
+  rowsPerPageOptions: [20, 50, 100, 250],
+  filterType: "multiselect"
 };
 
 const initialState = {
@@ -27,7 +27,35 @@ export default function LanguageTable(props) {
       // data is array of arrays where first array contains column headers
       // splice removes first array from data and returns headers array wrapped with another array
       // that's why we have [0] at the end
-      const columns = data.splice(0, 1)[0];
+      let columns = data.splice(0, 1)[0];
+      const customizeCol = [];
+      columns.map((name) => {
+        let newCol = {
+          name: name,
+          options: {
+            filter: false
+          } 
+        };
+        switch(name){
+          case "a":
+                newCol = {
+                  ...newCol,
+                  options: {
+                    filter: true,
+                    hint: "Rank. This is from KELLY."
+                  }
+                }
+          break;
+        }
+        customizeCol.push(newCol);
+      });
+//          default:
+//            customizeCol = customizeCol.concat(
+//              {
+//                //name: "toto"
+//              }
+//            );
+      columns = customizeCol;
       updateState({ columns, data });
     });
   }, []);
