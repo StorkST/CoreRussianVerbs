@@ -1,0 +1,37 @@
+# This workflow will do a clean install of node dependencies, build the source code and publish to branch gh-pages
+
+name: CI gh-pages
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+      working-directory: ./dev
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+    - 
+    - run: npm ci
+    - run: npm run build
+    - run: npm test
+      env:
+        CI: true
+    - name: Publish github pages
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/StorkST/Test-Webpage.git
+        npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
