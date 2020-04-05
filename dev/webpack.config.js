@@ -15,7 +15,7 @@ module.exports = {
     target: 'web', 
     devServer: {
         port: 3000,
-        contentBase: './dist',
+        contentBase: './build',
         overlay: {
             errors: true
           }
@@ -24,7 +24,7 @@ module.exports = {
         app: ['./src/App.jsx']
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         filename: 'js/[name].bundle.js'
     },
     devtool: 'source-map',

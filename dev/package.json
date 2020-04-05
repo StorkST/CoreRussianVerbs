@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://storkst.github.io/Test-Webpage/",
   "scripts": {
     "start:dev": "webpack-dev-server  --config webpack.config.js --open",
     "start": "webpack-dev-server --config webpack.config.js --open",
     "build:dev": "webpack --config webpack.config.js",
-    "build": "webpack --config webpack.config.js --mode production"
+    "build": "webpack --config webpack.config.js --mode production",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +23,7 @@
     "@babel/plugin-transform-runtime": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-es2015": "^7.0.0-beta.53",
-    "@babel/preset-react": "^7.9.1",
+    "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
@@ -29,7 +31,7 @@
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.1",
     "style-loader": "^1.1.3",
-    "webpack": "^4.42.0",
+    "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.10.3",
@@ -40,10 +42,11 @@
     "@material-ui/core": "3.2.2",
     "@material-ui/icons": "3.0.1",
     "express": "^4.17.1",
+    "gh-pages": "^2.2.0",
     "mui-datatables": "2.14.0",
-    "papaparse": "^5.1.1",
+    "papaparse": "^5.2.0",
     "react": "^16.13.1",
-    "react-csv-reader": "^3.0.4",
+    "react-csv-reader": "^3.0.5",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2"
   }
