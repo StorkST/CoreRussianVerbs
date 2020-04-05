@@ -55,7 +55,7 @@ module.exports = {
         HtmlWebpackPluginConfig,
         new webpack.NoEmitOnErrorsPlugin(),
         new CopyPlugin([
-            { from: './src/export-nostars.csv', to: 'data/' }
+            { from: './../RussianVerbsClassification.csv', to: 'data/' }
           ])
     ],
     mode: 'development',
