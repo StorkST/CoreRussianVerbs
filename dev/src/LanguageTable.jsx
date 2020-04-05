@@ -17,7 +17,7 @@ export default function LanguageTable(props) {
 
   useEffect(() => {
     fetchCsv({
-      url: "./data/export-nostars.csv",
+      url: "./data/RussianVerbsClassification.csv",
       encoding: "utf-8",
       omitHeader: false,
     }).then((data) => {
