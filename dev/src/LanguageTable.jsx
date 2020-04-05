@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import MUIDataTable from "mui-datatables";
 import { fetchCsv } from "./csvUtils";
 
+const title = "Russian Verbs Classification";
+
 const options = {
   filterType: "dropdown",
-  responsive: "scroll",
+  //responsive: "scroll",
+  rowsPerPageOptions: [50, 100, 250, 500]
 };
 
 const initialState = {
@@ -35,5 +38,5 @@ export default function LanguageTable(props) {
     return null;
   }
 
-  return <MUIDataTable data={state.data} columns={state.columns} options={options} title="Verbs" />;
+  return <MUIDataTable data={state.data} columns={state.columns} options={options} title={title} />;
 }
