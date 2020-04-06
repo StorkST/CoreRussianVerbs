@@ -17,16 +17,17 @@ The main file is called `RussianVerbs.csv` and contains for each verb:
 
 
 * Translation
-  * In english for now
+  * In english
+  * In french
 
 
 * Metadata
   * Aspect pairs (imperative / perfective)
-  * Ranks in the russian language, as defined by a study of Serge Sharoff. Rank is 0 when an aspect pair was not in the initial frequency list.
+  * Rank and CEFR level in the russian language, as defined by results from the 2013 Frequency Dictionary of Contemporary RussianCore Vocabulary for Learner by [Serge Sharoff, Elena Umanskaya, James Wilson](http://corpus.leeds.ac.uk/serge/publications/2013-routledge-intro.pdf) (more about it: [paper about the european KELLY project](http://corpus.leeds.ac.uk/serge/publications/2014-LREV-kelly.pdf), [dictionary files](http://corpus.leeds.ac.uk/serge/kelly/)). Rank is 10 000 when an aspect pair was not in the initial frequency list.
   * Belongings to conjugation groups (1st or 2nd conjugation group and suffixes as defined by [ressources from the Cornell University](https://russian.cornell.edu/verbs/irgLinks.htm))
-  * Any other metadata that could be suggested and be relevant may by added
+  * Any other metadata that could be suggested and be relevant may by added.
 
-> **March 2020: Be warned that material is given as is and may contains mistakes or not be complete. For example many adverbial forms are not yet specified and Conjugation is missing for a few verbs.**
+> **April 2020: Be warned that material is given as is and may contains mistakes or not be complete. For example many adverbial forms are not yet specified and Conjugation is missing for a few verbs.**
 
 ## Quantity
 
@@ -63,8 +64,7 @@ It is imporant to not check Tab as it will add unwanted tabs throughout the file
 
 * Completing Metadata "Conjugation groups" and "Suffix"
 
-* Having a Github webpage displaying the verbs table (using for example [MUI-Datatables](https://github.com/gregnb/mui-datatables))
-
 * Creating special cheat-sheets (for learning conjugation groups, suffix, verbal adjectives, imperfective of perfective forms...)
 
-* Feel free to make Pull Requests to add new columns and information about verbs (Translation, Metadata...)
+
+Feel free to make Pull Requests to add new columns and information about verbs (Translation, Metadata...)

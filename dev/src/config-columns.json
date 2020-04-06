@@ -3,7 +3,7 @@
     "name": "Ранг",
     "options": {
       "filter": false,
-      "hint": "Rank. This is from KELLY."
+      "hint": "Frequency rank in the Russian language (A Frequency Dictionary of Contemporary RussianCore Vocabulary for Learners, 2013)"
     }
   },
   {
@@ -34,13 +34,15 @@
     "name": "Разговорный",
     "options": {
       "filter": true,
-      "display": "false"
+      "display": "false",
+      "hint": "Colloquial"
     }
   },
   {
     "name": "Неправильный",
     "options": {
-      "filter": true
+      "filter": true,
+      "hint": "Irregular"
     }
   },
   {
@@ -54,7 +56,8 @@
     "name": "Суффикс спряжения",
     "options": {
       "filter": true,
-      "display": "false"
+      "display": "false",
+      "hint": "Suffixes of different conjugation classes (from http://russian.cornell.edu/verbs/conjTables.htm)"
     }
   },
   {
