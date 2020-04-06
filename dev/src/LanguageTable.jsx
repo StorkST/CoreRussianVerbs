@@ -27,6 +27,12 @@ export default function LanguageTable(props) {
       // that's why we have [0] at the end
       // const columns = data.splice(0, 1)[0];
       data.splice(0, 1);
+
+      // This is to avoid a bug: an empty row is tailing the end of the MUIDT.
+      // This removes this buggy empty line but we lose one row from the CSV => one row must bug from CSV to MUIDT,
+      // don't know which one.
+      // TODO: need to investigate
+      data.pop();
       
       // Use the custom config file instead of the original columns of the CSV.
       // TODO: parse each original column name and set the MUIDT header config from the config file?

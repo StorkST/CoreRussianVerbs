@@ -5,6 +5,7 @@ async function fetchCsv({url, encoding, omitHeader}){
         Papa.parse(url, {
             download: true,
             encoding,
+            dynamicTyping: true,
             header: omitHeader,
             complete: r => r.errors && r.errors.length ? reject(r.errors) : resolve(r.data)
         });
