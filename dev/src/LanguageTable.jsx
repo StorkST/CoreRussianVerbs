@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MUIDataTable from "mui-datatables";
+import { CircularProgress, Typography } from '@material-ui/core';
 import { fetchCsv } from "./csvUtils";
 import configTable  from "./config-MUI-Datatables.json";
 import configColumns from "./config-columns.json";
@@ -11,12 +12,14 @@ const options = configTable;
 const initialState = {
   columns: [],
   data: [],
+  isLoading: false
 };
 
 export default function LanguageTable(props) {
   const [state, updateState] = useState(initialState);
 
   useEffect(() => {
+    updateState({ isLoading: true })
     fetchCsv({
       url: "./data/RussianVerbsClassification.csv",
       encoding: "utf-8",
@@ -39,15 +42,24 @@ export default function LanguageTable(props) {
       // This way column ordering in the original CSV file can be updated without consequences for the MUIDT
       const columns = configColumns;
       
-      updateState({ columns, data });
+      updateState({ columns, data, isLoading: false });
     });
   }, []);
 
   // until we fetched and parsed all the data 
   // we show nothing
-  if (state === initialState) {
-    return null;
-  }
+  // 2020-04-06: disabled, added cirular progress at loading
+  // if (state === initialState) {
+  //   return null;
+  //}
 
-  return <MUIDataTable data={state.data} columns={state.columns} options={options} title={title} />;
+	return (
+		<div>
+			<MUIDataTable title={<Typography variant="title">
+        {title}
+				{state.isLoading && <CircularProgress size={24} style={{marginLeft: 15, position: 'relative', top: 4}} />}
+				</Typography>
+				} data={state.data} columns={state.columns} options={options} />
+		</div>
+	);
 }
