@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Ранг",
+    "options": {
+      "filter": false,
+      "hint": "Rank. This is from KELLY."
+    }
+  },
+  {
+    "name": "Уровень",
+    "options": {
+      "filter": true
+    }
+  },
+  {
+    "name": "По-английски",
+    "options": {
+      "filter": false
+    }
+  },
+  {
+    "name": "По-французски",
+    "options": {
+      "filter": false
+    }
+  },
+  {
+    "name": "Инфинитив",
+    "options": {
+      "filter": false
+    }
+  },
+  {
+    "name": "Разговорный",
+    "options": {
+      "filter": true,
+      "display": "false"
+    }
+  },
+  {
+    "name": "Неправильный",
+    "options": {
+      "filter": true
+    }
+  },
+  {
+    "name": "Группа",
+    "options": {
+      "filter": true,
+      "display": "false"
+    }
+  },
+  {
+    "name": "Суффикс спряжения",
+    "options": {
+      "filter": true,
+      "display": "false"
+    }
+  },
+  {
+    "name": "Совершенный вид",
+    "options": {
+      "filter": true
+    }
+  },
+  {
+    "name": "Пара аспектов",
+    "options": {
+      "filter": false
+    }
+  },
+  {
+    "name": "Возвратный",
+    "options": {
+      "filter": true,
+      "display": "false"
+    }
+  },
+  {
+    "name": "Движение",
+    "options": {
+      "filter": true,
+      "display": "false"
+    }
+  },
+  {
+    "name": "Я",
+    "options": {
+      "filter": false
+    }
+  },
+  {
+    "name": "Ты",
+    "options": {
+      "filter": false
+    }
+  },
+  {
+    "name": "Он/Она/Оно",
+    "options": {
+      "filter": false
+    }
+  },
+  {
+    "name": "Мы",
+    "options": {
+      "filter": false
+    }
+  },
+  {
+    "name": "Вы",
+    "options": {
+      "filter": false
+    }
+  },
+  {
+    "name": "Они",
+    "options": {
+      "filter": false
+    }
+  },
+  {
+    "name": "Повелительное накл. 1",
+    "options": {
+      "filter": false,
+      "display": "true"
+    }
+  },
+  {
+    "name": "Повелительное накл. 2",
+    "options": {
+      "filter": false,
+      "display": "false"
+    }
+  },
+  {
+    "name": "Деепричастие Наст. время",
+    "options": {
+      "filter": false,
+      "display": "false"
+    }
+  },
+  {
+    "name": "Деепричастие Прош. время",
+    "options": {
+      "filter": false,
+      "display": "false"
+    }
+  },
+  {
+    "name": "Действит. причастие Наст. время",
+    "options": {
+      "filter": false,
+      "display": "false"
+    }
+  },
+  {
+    "name": "Действит. причастие Прош. время",
+    "options": {
+      "filter": false,
+      "display": "false"
+    }
+  },
+  {
+    "name": "Страдат. причастие Наст. время",
+    "options": {
+      "filter": false,
+      "display": "false"
+    }
+  },
+  {
+    "name": "Страдат. причастие Прош. время",
+    "options": {
+      "filter": false,
+      "display": "false"
+    }
+  }
+]

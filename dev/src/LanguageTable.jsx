@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import MUIDataTable from "mui-datatables";
 import { fetchCsv } from "./csvUtils";
+import configTable  from "./config-MUI-Datatables.json";
+import configColumns from "./config-columns.json";
 
 const title = "Russian Verbs Classification";
 
-const options = {
-  //responsive: "scroll",
-  rowsPerPageOptions: [20, 50, 100, 250],
-  filterType: "multiselect"
-};
+const options = configTable;
 
 const initialState = {
   columns: [],
@@ -27,42 +25,14 @@ export default function LanguageTable(props) {
       // data is array of arrays where first array contains column headers
       // splice removes first array from data and returns headers array wrapped with another array
       // that's why we have [0] at the end
-      let columns = data.splice(0, 1)[0];
-      const customizeCol = [];
-      columns.map((name) => {
-        let newCol = {
-          name: name,
-          options: {
-            filter: false
-          } 
-        };
-        switch(name){
-          case "a":
-            newCol = {
-              ...newCol,
-              options: {
-                filter: true,
-                hint: "Rank. This is from KELLY."
-              }
-            }
-          break;
-          case "i":
-            newCol = {
-              ...newCol,
-              options: {
-                display: 'false'
-              }
-            }
-        }
-        customizeCol.push(newCol);
-      });
-//          default:
-//            customizeCol = customizeCol.concat(
-//              {
-//                //name: "toto"
-//              }
-//            );
-      columns = customizeCol;
+      // const columns = data.splice(0, 1)[0];
+      data.splice(0, 1);
+      
+      // Use the custom config file instead of the original columns of the CSV.
+      // TODO: parse each original column name and set the MUIDT header config from the config file?
+      // This way column ordering in the original CSV file can be updated without consequences for the MUIDT
+      const columns = configColumns;
+      
       updateState({ columns, data });
     });
   }, []);
