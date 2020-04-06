@@ -38,14 +38,21 @@ export default function LanguageTable(props) {
         };
         switch(name){
           case "a":
-                newCol = {
-                  ...newCol,
-                  options: {
-                    filter: true,
-                    hint: "Rank. This is from KELLY."
-                  }
-                }
+            newCol = {
+              ...newCol,
+              options: {
+                filter: true,
+                hint: "Rank. This is from KELLY."
+              }
+            }
           break;
+          case "i":
+            newCol = {
+              ...newCol,
+              options: {
+                display: 'false'
+              }
+            }
         }
         customizeCol.push(newCol);
       });
