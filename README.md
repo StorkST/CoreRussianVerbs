@@ -11,8 +11,8 @@ Once opened with a CSV Editor (Excel or an open-source alternative) it becomes e
 The main file is called `RussianVerbsClassification.csv` and contains *3048* verbs.
 
 More facts:
-- 8959 words are contained in the *Frequency Dictionary of Contemporary RussianCore Vocabulary for Learner (2013)*
-- 1755 verbs were extracted from these words (that's around 1 out of 5 words)
+- 8959 words are in the *Frequency Dictionary of Contemporary RussianCore Vocabulary for Learner, 2013*
+- 1755 verbs were extracted from these words (that's around 1 word out of 5 words)
 - 1293 aspect pairs from these verbs, not initialy in the frequency list were added. These newly added verbs have a rank set to 10000.
 - 1755 + 1293 = 3048
 

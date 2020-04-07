@@ -5,7 +5,7 @@ import { fetchCsv } from "./csvUtils";
 import configTable  from "./config-MUI-Datatables.json";
 import configColumns from "./config-columns.json";
 
-const title = "Russian Verbs Classification";
+const title = "Основные глаголы русского языка";
 
 const options = configTable;
 
