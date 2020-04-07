@@ -14,6 +14,7 @@ More facts:
 - 8959 words are contained in the *Frequency Dictionary of Contemporary RussianCore Vocabulary for Learner (2013)*
 - 1755 verbs were extracted from these words (that's around 1 out of 5 words)
 - 1293 aspect pairs from these verbs, not initialy in the frequency list were added. These newly added verbs have a rank set to 10000.
+- 1755 + 1293 = 3048
 
 
 ### Data structure
@@ -32,30 +33,38 @@ The file contains for each verb:
 
 
 * Metadata
-  * Rank and CEFR level in the russian language, as defined by results from the 2013 Frequency Dictionary of Contemporary RussianCore Vocabulary for Learner by [Serge Sharoff, Elena Umanskaya, James Wilson](http://corpus.leeds.ac.uk/serge/publications/2013-routledge-intro.pdf) (more about it: [paper about the european KELLY project](http://corpus.leeds.ac.uk/serge/publications/2014-LREV-kelly.pdf), [dictionary files](http://corpus.leeds.ac.uk/serge/kelly/)). Rank is 10 000 when an aspect pair was not in the initial frequency list.
+  * Rank and CEFR level in the russian language<br>
+  As defined by the *Frequency Dictionary of Contemporary RussianCore Vocabulary for Learner, 2013* by [Serge Sharoff, Elena Umanskaya, James Wilson](http://corpus.leeds.ac.uk/serge/publications/2013-routledge-intro.pdf)<br>
+  To learn more about this study: [paper about the european KELLY project](http://corpus.leeds.ac.uk/serge/publications/2014-LREV-kelly.pdf), [dictionary files](http://corpus.leeds.ac.uk/serge/kelly/).<br>
+  Note that the rank is set to 10 000 for a verb when he is a newly added aspect pair not originally in the *Frequency Dictionary*.
+
   * Aspect pairs (imperative / perfective)
-  * Belonging to conjugation groups (1st or 2nd conjugation group and suffixes as defined by [ressources from the Cornell University](https://russian.cornell.edu/verbs/irgLinks.htm))
-  * Any other metadata that could be suggested and be relevant may by added
+
+  * Belonging to conjugation groups<br>
+    1st or 2nd conjugation group.<br>
+    Suffixes as defined by [ressources from the Cornell University](https://russian.cornell.edu/verbs/irgLinks.htm).
+
+  * Any other metadata that could be suggested and be relevant
 
 
-> **April 2020: Be warned that material is given as is and may contains mistakes or not be complete. For example:
-> - conjugation is missing for a minority of verbs
-> - conjugation groups are not set
-> - some aspect pairs might be wrong
-
-Your contributions are welcomed to improve the file**
+> April 2020: Be warned that material is given as is and may contains mistakes or not be complete. For example:
+> - Conjugation is missing for a minority of verbs
+> - Conjugation groups are not set
+> - Some aspect pairs might be wrong
+>
+> Your contributions are welcomed to improve the file.
 
 
 ## Reading the file
 
-The easiest way to read the file is to go on the [webpage](https://storkst.github.io/RussianVerbsClassification/).
+The easiest way to read the file is to go on its [webpage](https://storkst.github.io/RussianVerbsClassification/).
 
-You can also download it and open it with your favorite CSV reader. Note that columns are marked with semicolons ';'.
+You can also download the file from the repository and open it with your favorite CSV reader. Note that columns are marked with the semicolon mark ';'.
 
 
 ## Contributing and editing the main CSV file
 
-When contributing to the project, you should take care of the tool you are using.<br>
+When contributing to the project, you should take care of the tool you are using for editing the file.<br>
 For example Excel can read the file in UTF-8 but exports with a BOM UTF-8 encoding that adds unwanted bytes to the file. Therefore you should avoid using Excel for editing if you want to contribute.
 
 The best ways to edit the file for a collaborative usage are:
@@ -83,7 +92,7 @@ Thanks to:
 ## TODO
 * Most needed would be making a review of the verbs, fixing false information and adding the missing one (conjugation and aspect pairs mainly)
 
-* Completing Metadata "Conjugation groups" and "Suffix"
+* Completing Metadata "Conjugation groups", "Suffix" and other almost-empty fields
 
 * Creating special cheat-sheets (for learning conjugation groups, suffix, verbal adjectives, imperfective of perfective forms...)
 
