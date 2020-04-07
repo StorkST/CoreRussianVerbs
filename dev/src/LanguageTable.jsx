@@ -32,8 +32,7 @@ export default function LanguageTable(props) {
       data.splice(0, 1);
 
       // This is to avoid a bug: an empty row is tailing the end of the MUIDT.
-      // This removes this buggy empty line but we lose one row from the CSV => one row must bug from CSV to MUIDT,
-      // don't know which one.
+      // This removes this buggy empty line
       // TODO: need to investigate
       data.pop();
       
