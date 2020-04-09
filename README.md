@@ -11,7 +11,7 @@ Once opened with a CSV Editor (Excel or an open-source alternative) it becomes e
 The main file is called `RussianVerbsClassification.csv` and contains *3047* verbs.
 
 More facts:
-- 8959 words are in the *Frequency Dictionary of Contemporary RussianCore Vocabulary for Learner, 2013*
+- 8959 words are in the *Frequency Dictionary of Contemporary Russian Core Vocabulary for Learners, 2013*
 - 1755 verbs were extracted from these words (that's around 1 word out of 5 words)
 - 1292 aspect pairs from these verbs, not initialy in the frequency list were added. These newly added verbs have a rank set to 10000.
 - 1755 + 1292 = 3047
@@ -34,7 +34,7 @@ The file contains for each verb:
 
 * Metadata
   * Rank and CEFR level in the russian language<br>
-  As defined by the *Frequency Dictionary of Contemporary RussianCore Vocabulary for Learner, 2013* by [Serge Sharoff, Elena Umanskaya, James Wilson](http://corpus.leeds.ac.uk/serge/publications/2013-routledge-intro.pdf)<br>
+  As defined by the [Frequency Dictionary of Contemporary Russian Core Vocabulary for Learner, 2013](http://corpus.leeds.ac.uk/serge/publications/2013-routledge-intro.pdf) by Serge Sharoff, Elena Umanskaya, James Wilson<br>
   To learn more about this study: [paper about the european KELLY project](http://corpus.leeds.ac.uk/serge/publications/2014-LREV-kelly.pdf), [dictionary files](http://corpus.leeds.ac.uk/serge/kelly/).<br>
   Note that the rank is set to 10 000 for a verb when he is a newly added aspect pair not originally in the *Frequency Dictionary*.
 
