@@ -1,10 +1,12 @@
-# Russian-Verbs-Classification
+# Core Russian Verbs
 
-Purpose of the repository is to share knowledge and efforts to build a database about the the most frequent Russian Verbs which are the most useful for any russian language learners.
+Purpose of the repository is to share knowledge and efforts to build a database about the the most frequent Russian verbs which are the most useful for any learner of the russian language.
 
-This database can be used for the study of russian verbs: to study verbs forms, to learn conjugation, to build cheat-sheets...
-
-Once opened with a CSV Editor (Excel or an open-source alternative) it becomes easy to filter and display only the wanted verbs.
+This database/file can be used for example to:
+- learn conjugation
+- study and revise verbs forms
+- build cheat-sheets
+- build exercices
 
 ## What is in the file ?
 
@@ -34,19 +36,20 @@ The file contains for each verb:
 
 * Metadata
   * Rank and CEFR level in the russian language<br>
-  As defined by the [Frequency Dictionary of Contemporary Russian Core Vocabulary for Learner, 2013](http://corpus.leeds.ac.uk/serge/publications/2013-routledge-intro.pdf) by Serge Sharoff, Elena Umanskaya, James Wilson<br>
+  As defined by Serge Sharoff, Elena Umanskaya, James Wilson (2008), in the [Frequency Dictionary of Contemporary Russian Core Vocabulary for Learner, 2013](http://corpus.leeds.ac.uk/serge/publications/2013-routledge-intro.pdf) by <br>
   To learn more about this study: [paper about the european KELLY project](http://corpus.leeds.ac.uk/serge/publications/2014-LREV-kelly.pdf), [dictionary files](http://corpus.leeds.ac.uk/serge/kelly/).<br>
   Note that the rank is set to 10 000 for a verb when he is a newly added aspect pair not originally in the *Frequency Dictionary*.
 
   * Aspect pairs (imperative / perfective)
 
-  * Irregularity of the verb
+  * Irregularity<br>
+    Initiated with a list of irregular verbs from V.G. Gak and J. Triomphe (1991), *Dictionnaire français-russe французско-русский словарь*. 
 
   * Belonging to conjugation groups<br>
     1st or 2nd conjugation group.<br>
     Suffixes as defined by [ressources from the Cornell University](https://russian.cornell.edu/verbs/irgLinks.htm).
 
-  * And any other metadata that could be relevant
+  * And any other metadata that could be relevant for learning
 
 
 > April 2020: Be warned that material is given as is and may contains mistakes or not be complete. For example:
@@ -59,7 +62,7 @@ The file contains for each verb:
 
 ## Reading the file
 
-The easiest way to read the file is to go on its [webpage](https://storkst.github.io/RussianVerbsClassification/).
+The easiest way to read the file is to go on its [webpage](https://storkst.github.io/CoreRussianVerbs/).
 
 You can also download the file from the repository and open it with your favorite CSV reader. Note that columns are marked with the semicolon mark ';'.
 
@@ -99,4 +102,4 @@ Thanks to:
 * Creating special cheat-sheets (for learning conjugation groups, suffix, verbal adjectives, imperfective of perfective forms...)
 
 
-Feel free to open issue and suggest new columns and information about verbs (Translation, Metadata...). Pull Requests are welcomed.
+Feel free to open issues and suggest new columns and information about verbs (Translation, Metadata...). Pull Requests are welcomed to improve the quality of the file.
