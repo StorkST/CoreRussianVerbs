@@ -3,7 +3,7 @@ import MUIDataTable from "mui-datatables";
 import { CircularProgress, Typography } from '@material-ui/core';
 import { fetchCsv } from "./csvUtils";
 import configTable  from "./config-MUI-Datatables.json";
-import configColumns from "./config-columns.json";
+import configColumns from "./config-columns.js";
 
 const title = "Основные глаголы русского языка";
 
