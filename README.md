@@ -82,12 +82,12 @@ It is important to not check Tab as it will add unwanted tabs throughout the fil
 * Using [Atom](https://atom.io/) with the [atom-tablr extension](https://github.com/abe33/atom-tablr). With this configuration set when opening the file. <br>
 <img src="screenshots/Atom-tablr-configuration-at-opening.png" width="700">
 
-
 * Using a simple text editor (but this solution is not user-friendly)
 
 * Feel free to try other text editors that would be simple to use but verify with `git diff` that new modifications to the file are comparable with its previous version
 
-## Contributions
+
+## Contributions
 
 Thanks to:
 

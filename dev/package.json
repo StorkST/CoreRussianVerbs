@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://storkst.github.io/Test-Webpage/",
+  "homepage": "https://storkst.github.io/CoreRussianVerbs/",
   "scripts": {
     "start:dev": "webpack-dev-server  --config webpack.config.js --open",
     "start": "webpack-dev-server --config webpack.config.js --open",
