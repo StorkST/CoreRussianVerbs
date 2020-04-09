@@ -1,23 +1,17 @@
+const configColumns =
 [
   {
     "name": "Ранг",
     "options": {
-      "filter": false,
+      "filter": true,
       "hint": "Frequency rank in the Russian language (A Frequency Dictionary of Contemporary RussianCore Vocabulary for Learners, 2013). Rank is 10000 when a verb is an aspect pair not originally in the Frequency Dictionary.",
-      "filterType": "custom",
-      "filterList": ["1 - 9000", "10000"],
       "filterOptions": {
-        "names": ["1 - 9000", "10000"],
+        "names": ["1 - 9 000", "10 000"],
         logic(rank, filters) {
-          if (filters[0] && filters[1]) {
-            return rank <= 10000;
-          } else if (filters[0]) {
-            return rank <= 9000;
-          }
-          else if (filter[1]) {
-            return rank == 10000;
-          }
-          return false;
+          const show =
+            (filters.indexOf("1 - 9 000") >= 0 && rank <= 9000) ||
+            (filters.indexOf("10 000") >= 0 && rank == 10000);
+          return !show;
         },
       }
     }
@@ -194,4 +188,9 @@
       "display": "false"
     }
   }
-]
+];
+
+export
+{
+    configColumns
+};
