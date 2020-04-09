@@ -40,11 +40,13 @@ The file contains for each verb:
 
   * Aspect pairs (imperative / perfective)
 
+  * Irregularity of the verb
+
   * Belonging to conjugation groups<br>
     1st or 2nd conjugation group.<br>
     Suffixes as defined by [ressources from the Cornell University](https://russian.cornell.edu/verbs/irgLinks.htm).
 
-  * Any other metadata that could be suggested and be relevant
+  * And any other metadata that could be relevant
 
 
 > April 2020: Be warned that material is given as is and may contains mistakes or not be complete. For example:
