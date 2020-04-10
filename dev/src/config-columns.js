@@ -1,9 +1,20 @@
+import React from "react";
+import classnames from "classnames";
+
 const configColumns =
 [
   {
     "name": "Ранг",
     "options": {
       "filter": true,
+      setCellHeaderProps: (value) =>
+        (
+          {
+            style: {
+              'paddingRight': '0px'
+            }
+          }
+        ),
       "hint": "Frequency rank in the Russian language (A Frequency Dictionary of Contemporary RussianCore Vocabulary for Learners, 2013). Rank is 10000 when a verb is an aspect pair not originally in the Frequency Dictionary.",
       "filterOptions": {
         "names": ["1 - 9 000", "10 000"],
@@ -19,8 +30,16 @@ const configColumns =
   {
     "name": "Уровень",
     "options": {
-      "filter": true
-    }
+      "filter": true,
+      setCellHeaderProps: (value) =>
+        (
+          {
+            style: {
+              'paddingRight': '0px'
+            }
+          }
+        ),
+      }
   },
   {
     "name": "По-английски",
