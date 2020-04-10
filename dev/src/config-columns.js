@@ -71,7 +71,6 @@ const configColumns =
     "name": "Неправильный",
     "options": {
       "filter": true,
-      "hint": "Irregular"
     }
   },
   {
