@@ -1,6 +1,7 @@
 {
   "rowsPerPageOptions": [10, 25, 50, 100],
   "filterType": "multiselect",
+  "responsive": "scrollMaxHeight",
   "downloadOptions": {
     "filename": "export-RussianVerbsClassification.csv",
     "separator": ";"
