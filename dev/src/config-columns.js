@@ -4,7 +4,7 @@ import classnames from "classnames";
 const configColumns =
 [
   {
-    "name": "Ранг",
+    "name": "Ранг ГЛ",
     "options": {
       "filter": true,
       setCellHeaderProps: (value) =>
@@ -15,16 +15,32 @@ const configColumns =
             }
           }
         ),
-      "hint": "Frequency rank in the Russian language (A Frequency Dictionary of Contemporary RussianCore Vocabulary for Learners, 2013). Rank is 10000 when a verb is an aspect pair not originally in the Frequency Dictionary.",
+      "hint": "Frequency rank among verbs of the Russian language (2013, A Frequency Dictionary of Contemporary Russian Core Vocabulary for Learners). Rank is 10000 when a verb is an aspect pair not originally in Frequency Dictionary.",
       "filterOptions": {
-        "names": ["1 - 9 000", "10 000"],
+        "names": ["1 - 1755", "10 000"],
         logic(rank, filters) {
           const show =
-            (filters.indexOf("1 - 9 000") >= 0 && rank <= 9000) ||
+            (filters.indexOf("1 - 1755") >= 0 && rank <= 1755) ||
             (filters.indexOf("10 000") >= 0 && rank == 10000);
           return !show;
         },
       }
+    }
+  },
+  {
+    "name": "Ранг РУ",
+    "options": {
+      "filter": false,
+      "display": "false",
+      setCellHeaderProps: (value) =>
+        (
+          {
+            style: {
+              'paddingRight': '0px'
+            }
+          }
+        ),
+      "hint": "Frequency rank in the entire Russian language (2013, A Frequency Dictionary of Contemporary Russian Core Vocabulary for Learners). Rank is 10000 when a verb is an aspect pair not originally in the Frequency Dictionary.",
     }
   },
   {
