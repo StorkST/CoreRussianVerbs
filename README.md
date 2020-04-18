@@ -1,6 +1,6 @@
 # Core Russian Verbs for learners
 
-Purpose of the repository is to share knowledge and efforts to build a database about the the most frequent Russian verbs which are the most useful for any learner of the russian language.
+Purpose of this project is to share knowledge and efforts to build a database about the the most frequent Russian verbs which are the most useful for any learner of the russian language.
 
 This database/file can be used for example to:
 - learn conjugation
