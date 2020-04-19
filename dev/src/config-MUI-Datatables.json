@@ -6,5 +6,6 @@
   "downloadOptions": {
     "filename": "export-RussianVerbsClassification.csv",
     "separator": ";"
-  }
+  },
+  "print": false
 }
