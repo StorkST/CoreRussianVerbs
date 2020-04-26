@@ -38,14 +38,12 @@ class DailyVerbs extends Component {
 		super(props);
 
 		this.state = {
-			verbs: {
-				"A1": "",
-				"A2": "",
-				"B1": "",
-				"B2": "",
-				"C1": "",
-				"C2": ""
-			}
+      A1: {},
+      A2: {},
+      B1: {},
+      B2: {},
+      C1: {},
+      C2: {}
 		};
 	}
 
@@ -57,41 +55,59 @@ class DailyVerbs extends Component {
     }).then((data) => {
         data.splice(0, 1);
         data.pop();
-        let newVerbs = {};
+        let verbs = {
+          "A1": {},
+          "A2": {},
+          "B1": {},
+          "B2": {},
+          "C1": {},
+          "C2": {}
+        };
 
         data.map((row) => {
           const i = row[0];
-          const verbName = row[5] + ' #' + i ;
+          const verbName = row[5];
+          const verbData = {
+            "name": verbName,
+            "i": i + "/" + finale
+          }
 
           switch(i) {
             case dailyIndexA1:
-              newVerbs["A1"] = verbName;
+              verbs["A1"] = verbData;
             break;
             case dailyIndexA2:
-              newVerbs["A2"] = verbName;
+              verbs["A2"] = verbData;
             break;
             case dailyIndexB1:
-              newVerbs["B1"] = verbName;
+              verbs["B1"] = verbData;
             break;
             case dailyIndexB2:
-              newVerbs["B2"] = verbName;
+              verbs["B2"] = verbData;
             break;
             case dailyIndexC1:
-              newVerbs["C1"] = verbName;
+              verbs["C1"] = verbData;
             break;
             case dailyIndexC2:
-              newVerbs["C2"] = verbName;
+              verbs["C2"] = verbData;
             break;
           }
         });
-        this.setState({ verbs: newVerbs });
+        this.setState({
+          A1: verbs["A1"],
+          A2: verbs["A2"],
+          B1: verbs["B1"],
+          B2: verbs["B2"],
+          C1: verbs["C1"],
+          C2: verbs["C2"],
+        });
     });
 	}
 
 	render() {
 		return (
       <div style={styles.root}>
-        <Grid container spacing={2}>
+        <Grid container spacing={0}>
           <Grid item xs={12}>
             <Typography style={styles.title} variant="h6">
               Глаголы сегодня
@@ -101,11 +117,11 @@ class DailyVerbs extends Component {
             <List component="nav" style={styles.list}>
               <ListItem>
                 <Avatar style={styles.greenAvatar}>A1</Avatar>
-                <ListItemText inset primary={this.state.verbs["A1"]} />
+                <ListItemText primary={this.state.A1["name"]} secondary={this.state.A1["i"]} />
               </ListItem>
               <ListItem>
                 <Avatar style={styles.greenAvatar}>A2</Avatar>
-                <ListItemText inset primary={this.state.verbs["A2"]} />
+                <ListItemText primary={this.state.A2["name"]} secondary={this.state.A2["i"]} />
               </ListItem>
             </List>
           </Grid>
@@ -113,11 +129,11 @@ class DailyVerbs extends Component {
             <List component="nav" style={styles.list}>
               <ListItem>
                 <Avatar style={styles.orangeAvatar}>B1</Avatar>
-                <ListItemText inset primary={this.state.verbs["B1"]} />
+                <ListItemText primary={this.state.B1["name"]} secondary={this.state.B1["i"]} />
               </ListItem>
               <ListItem>
                 <Avatar style={styles.orangeAvatar}>B2</Avatar>
-                <ListItemText inset primary={this.state.verbs["B2"]} />
+                <ListItemText primary={this.state.B2["name"]} secondary={this.state.B2["i"]} />
               </ListItem>
             </List>
           </Grid>
@@ -125,11 +141,11 @@ class DailyVerbs extends Component {
             <List component="nav" style={styles.list}>
               <ListItem>
                 <Avatar style={styles.redAvatar}>C1</Avatar>
-                <ListItemText inset primary={this.state.verbs["C1"]} />
+                <ListItemText primary={this.state.C1["name"]} secondary={this.state.C1["i"]} />
               </ListItem>
               <ListItem>
                 <Avatar style={styles.redAvatar}>C2</Avatar>
-                <ListItemText inset primary={this.state.verbs["C2"]} />
+                <ListItemText primary={this.state.C2["name"]} secondary={this.state.C2["i"]} />
               </ListItem>
             </List>
           </Grid>
