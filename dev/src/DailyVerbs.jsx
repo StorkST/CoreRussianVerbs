@@ -22,7 +22,7 @@ const finale = 1755;
 
 const d = new Date();
 var seedrandom = require('seedrandom');
-const dailyRng = seedrandom(d.getFullYear() + d.getMonth() + d.getDate());
+const dailyRng = seedrandom(d.getFullYear().toString() + '+' - d.getMonth().toString() + '-' + d.getDate().toString());
 const dailyRand = dailyRng();
 const dailyIndexA1 = Math.round(dailyRand * (A2 - 1));
 const dailyIndexA2 = Math.round((dailyRand * (B1 - A2 - 1)) + A2);
