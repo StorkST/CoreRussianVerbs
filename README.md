@@ -1,6 +1,6 @@
 # Core Russian Verbs for learners
 
-Purpose of this project is to share knowledge and efforts to build a database about the the most frequent Russian verbs which are the most useful for any learner of the russian language.
+File and webpage of the most common Russian verbs which are the most useful for any learner of the russian language.
 
 This database/file can be used for example to:
 - learn conjugation
@@ -36,8 +36,8 @@ The file contains for each verb:
 
 * Metadata
   * Rank and CEFR level in the russian language<br>
-  As defined by Serge Sharoff, Elena Umanskaya, James Wilson (2008), in the [Frequency Dictionary of Contemporary Russian Core Vocabulary for Learner, 2013](http://corpus.leeds.ac.uk/serge/publications/2013-routledge-intro.pdf) by <br>
-  To learn more about this study: [paper about the european KELLY project](http://corpus.leeds.ac.uk/serge/publications/2014-LREV-kelly.pdf), [dictionary files](http://corpus.leeds.ac.uk/serge/kelly/).<br>
+  As defined by Serge Sharoff, Elena Umanskaya, James Wilson, in the [Frequency Dictionary of Contemporary Russian Core Vocabulary for Learner, 2013](http://corpus.leeds.ac.uk/serge/publications/2013-routledge-intro.pdf).
+  To learn about this study: [paper about the european KELLY project](http://corpus.leeds.ac.uk/serge/publications/2014-LREV-kelly.pdf), [dictionary files](http://corpus.leeds.ac.uk/serge/kelly/).<br>
   Note that the rank is set to 10 000 for a verb when he is a newly added aspect pair not originally in the *Frequency Dictionary*.
 
   * Aspect pairs (imperative / perfective)
