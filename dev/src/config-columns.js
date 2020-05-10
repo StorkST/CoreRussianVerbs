@@ -75,6 +75,13 @@ const configColumns =
     }
   },
   {
+    "name": "Подробности",
+    "options": {
+      "filter": false,
+      "display": "false",
+    }
+  },
+  {
     "name": "Разговорный",
     "options": {
       "filter": true,
