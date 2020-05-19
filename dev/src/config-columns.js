@@ -130,7 +130,7 @@ const configColumns =
     }
   },
   {
-    "name": "Движение",
+    "name": "Действительный",
     "options": {
       "filter": true,
       "display": "false"
