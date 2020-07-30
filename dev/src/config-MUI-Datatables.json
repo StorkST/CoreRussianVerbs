@@ -3,7 +3,7 @@
   "filterType": "multiselect",
   "responsive": "vertical",
   "selectableRows": "none",
-  "fixedHeader": true,
+  "fixedHeader": false,
   "downloadOptions": {
     "filename": "export-RussianVerbsClassification.csv",
     "separator": ";"
