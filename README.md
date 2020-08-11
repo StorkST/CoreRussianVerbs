@@ -1,6 +1,6 @@
 # Core Russian Verbs for learners
 
-File and webpage of the most common Russian verbs which are the most useful for any learner of the russian language.
+[File](https://raw.githubusercontent.com/StorkST/CoreRussianVerbs/master/RussianVerbsClassification.csv) and [Webpage](https://storkst.github.io/CoreRussianVerbs/) of the most common Russian verbs which are the most useful for any learner of the russian language.
 
 This database/file can be used for example to:
 - learn conjugation
