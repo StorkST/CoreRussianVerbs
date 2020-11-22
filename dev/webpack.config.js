@@ -54,10 +54,14 @@ module.exports = {
         }),
         HtmlWebpackPluginConfig,
         new webpack.NoEmitOnErrorsPlugin(),
-        new CopyPlugin([
-            { from: './../RussianVerbsClassification.csv', to: 'data/' },
-            { from: './../LICENSE.txt', to: 'data/' }
-          ])
+        new CopyPlugin(
+          {
+            patterns: [
+              { from: './../RussianVerbsClassification.csv', to: 'data/' },
+              { from: './../LICENSE.txt', to: 'data/' }
+            ]
+          }
+        )
     ],
     mode: 'development',
     optimization: {
